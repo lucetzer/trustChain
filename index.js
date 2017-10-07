@@ -13,7 +13,7 @@ web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
 trustChainString = fs.readFileSync('./contracts/trustChain.sol').toString();
 trustChainCompiled = solc.compile(trustChainString);
 
-abiDefinition = JSON.parse(compiledCode.contracts[':TrustChain'].interface);
+abiDefinition = JSON.parse(trustChainCompiled.contracts[':TrustChain'].interface);
 TrustChainContract = web3.eth.contract(abiDefinition);
 
 byteCode = trustChainCompiled.contracts[':TrustChain'].bytecode;

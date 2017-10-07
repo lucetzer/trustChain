@@ -67,13 +67,8 @@ contract TrustChain {
         businesses[msg.sender].creationTime = now;
     }
 
-//    function totalVotesFor(bytes32 candidate) returns (uint8) {
-//        if (validCandidate(candidate) == false) throw;
-//        return votesReceived[candidate];
-//    }
-
-    function getTotalEndorsements(string companyRegNumber) {
-        return businesses[companyRegNumber].endorsements;
+    function getTotalEndorsements() constant returns (uint256 endorsements) {
+        endorsements = businesses[msg.sender].endorsements;
     }
 
 //
