@@ -14,5 +14,8 @@
   },
   "keywords": [],
   "author": "LF",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "solc": "^0.4.17"
+  }
 }
