@@ -1,0 +1,18 @@
+{
+  "name": "etherplay",
+  "version": "1.0.0",
+  "description": "",
+  "main": "config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "web3": "0.19.0"
+  },
+  "keywords": [],
+  "author": "LF",
+  "license": "ISC"
+}
